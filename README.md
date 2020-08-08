@@ -51,7 +51,11 @@ Implementations from third parties:
 </td>
 <td><a href="https://github.com/burakoner/OKEx.Net"><img src="https://raw.githubusercontent.com/burakoner/OKEx.Net/master/Okex.Net/Icon/icon.png"></a>
 <br />
-<a href="https://github.comburakoner/OKEx.Net">OKEx</a>
+<a href="https://github.com/burakoner/OKEx.Net">OKEx</a>
+</td>
+	<td><a href="https://github.com/ridicoulous/Bitmex.Net"><img src="https://github.com/ridicoulous/Bitmex.Net/blob/master/Bitmex.Net/Icon/icon.png"></a>
+<br />
+<a href="https://github.com/ridicoulous/Bitmex.Net">Bitmex</a>
 </td>
 </tr>
 </table>
@@ -148,6 +152,101 @@ When no longer listening to private endpoints the `client.StopUserStream` method
 
 
 ## Release notes
+* Version 5.1.14 - 03 Aug 2020
+    * Added check for MinNotional filter when using AutoComply trade rules behaviour
+    * Adjusted bool parameter serialization
+
+* Version 5.1.13 - 27 Jul 2020
+	* Updated futures balance, account info, position endpoints to version 2
+	* Added missing futures market data endpoints
+
+* Version 5.1.12 - 21 Jul 2020
+    * Updated order book models
+
+* Version 5.1.11 - 20 Jul 2020
+    * Fixes for future client
+
+* Version 5.1.10 - 07 Jul 2020
+    * Fixed datetime conversion for some objects
+
+* Version 5.1.9 - 06 Jul 2020
+    * Added CancelMultipleOrders
+    * Added CancelAllOrders
+    * Added EventTime to OrderBook stream
+    * Fixed purchase record conversion
+
+* Version 5.1.8 - 21 Jun 2020
+    * Updated CryptoExchange
+
+* Version 5.1.7 - 16 Jun 2020
+    * Changed IncomeType to string, Update CryptoExchange.Net
+
+* Version 5.1.6  - 11 Jun 2020
+	* Fixed subscribe error on symbols with an `I` caused by unset culture info
+
+* Version 5.1.5 - 07 Jun 2020
+	* Fixed serialization/encryption bug
+
+* Version 5.1.4 - 02 Jun 2020
+	* Fixed empty request bug
+
+* Version 5.1.3 - 02 Jun 2020
+    * Added CancelAllOrders endpoint
+    * Added PlaceMultipleOrders endpoint for futures
+    * Added BinanceFuturesSymbolOrderBook
+    * Added missing Expired order status mapping
+    * Added GetBrackets to futures client
+
+* Version 5.1.2 - 26 May 2020
+    * Added CancelAllOrdersAfterTimeout futures endpoint
+    * Added timestamp to various models
+    * Added closePosition paramter for future orders
+
+* Version 5.1.1 - 20 May 2020
+    * Fixed ChangeInitialLeverage endpoint
+    * Fixed ChangeMarginType endpoint
+    * Fixed deserialization error on maxNotionalValue
+    * Updated CryptoExchange.Net
+
+* Version 5.1.0 - 20 may 2020
+	* Bumped to release version
+	* Added missing wallet endpoints
+	* Added sub-account endpoints
+	* Added savings endpoints
+
+* Version 5.1.0-alpha10 - 08 May 2020
+    * Added Brokerage client, various fixes, added some missing parameters
+
+* Version 5.1.0-alpha9 - 01 May 2020
+    * Fixed GetExchangeInfo call, merged master
+
+* Version 5.1.0-alpha8 - 19 Mar 2020
+    * Futures update
+
+* Version 5.1.0-alpha7 - 16 Mar 2020
+    * fixed reference
+
+* Version 5.1.0-alpha6 - 16 Mar 2020
+    * Fixed ticker stream
+
+* Version 5.1.0-alpha5 - 16 Mar 2020
+    * Futures update
+
+* Version 5.1.0-alpha4 - 06 Mar 2020
+    * Actual stream fixes
+
+* Version 5.1.0-alpha3 - 06 Mar 2020
+    * Futures stream fixes
+
+* Version 5.1.0-alpha2 - 03 Mar 2020
+    * Updated CryptoExchange version
+
+* Version 5.1.0-alpha - 03 Mar 2020
+    * First version Futures Api implementation
+
+* Version 5.0.10 - 01 May 2020
+    * Fixed filter parsing in GetExchangeInfo
+
 * Version 5.0.9 - 03 Mar 2020
     * Fixed serialization issue on DustTransfer assets parameter
 
